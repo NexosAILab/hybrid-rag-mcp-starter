@@ -2,7 +2,7 @@
 
 Production-ready Hybrid Retrieval-Augmented Generation (RAG) MCP Server in pure Python, combining deterministic keyword search (BM25), dense vector embeddings (Reciprocal Rank Fusion, $k=60$), temporal policy filtering, and a strict verification gate before returning grounded answers.
 
-![Nexos AI Lab Banner](https://raw.githubusercontent.com/NexosAILab/.github/main/brand-assets/github_header_banner.jpg)
+![Hybrid RAG MCP Starter Social Preview](social_preview_1280x640.jpg)
 
 [![YouTube](https://img.shields.io/badge/YouTube-Nexos%20AI%20Lab-red.svg?logo=youtube)](https://www.youtube.com/@NexosAILab)
 [![X](https://img.shields.io/badge/X-@NexosAILab-black.svg?logo=x)](https://x.com/NexosAILab)
