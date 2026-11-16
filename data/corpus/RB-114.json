@@ -1,0 +1,12 @@
+{
+  "id": "RB-114",
+  "title": "Cache error remediation \u2014 session store (billing)",
+  "service": "billing",
+  "type": "runbook",
+  "body": "Production incidents involving session timeout spikes require immediate cache mitigation. For ERR_CACHE_109, purge the session cache and rotate signing key K-7. Verify that downstream token validation services resume processing before unflagging the incident.",
+  "entities": [
+    "ERR_CACHE_109"
+  ],
+  "valid_from": "2025-06-15",
+  "superseded_by": null
+}

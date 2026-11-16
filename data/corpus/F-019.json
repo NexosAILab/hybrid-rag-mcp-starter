@@ -1,0 +1,10 @@
+{
+  "id": "F-019",
+  "title": "Operations Runbook \u2014 Engineering On-Call Rotation Handover",
+  "service": "general",
+  "type": "filler",
+  "body": "Primary on-call engineers conduct weekly handover meetings every Monday at 10:00 AM UTC to review active escalations.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

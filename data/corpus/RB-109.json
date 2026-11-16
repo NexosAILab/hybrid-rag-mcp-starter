@@ -1,0 +1,12 @@
+{
+  "id": "RB-109",
+  "title": "Cache error mitigation and session recovery procedure",
+  "service": "billing",
+  "type": "runbook",
+  "body": "When billing cache operations degrade, perform emergency remediation. For ERR_CACHE_190, restart the cache cluster and flush all nodes. Check cluster metrics across nodes to ensure stability before traffic resumes.",
+  "entities": [
+    "ERR_CACHE_190"
+  ],
+  "valid_from": "2025-06-15",
+  "superseded_by": null
+}

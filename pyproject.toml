@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hybrid-rag-mcp"
+version = "0.1.0"
+description = "Production-grade Hybrid RAG MCP Server in pure Python (BM25 + Vectors + RRF + Evaluation Gate)"
+authors = [{ name = "Nexos AI Lab", email = "htillero@gmail.com" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp>=1.2.0",
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+    "numpy>=1.26.0",
+]
+
+[project.optional-dependencies]
+local = [
+    "sentence-transformers>=2.2.0",
+]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[project.scripts]
+hybrid-rag-mcp = "hybrid_rag_mcp.server:main"

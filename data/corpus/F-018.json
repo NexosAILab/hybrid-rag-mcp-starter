@@ -1,0 +1,10 @@
+{
+  "id": "F-018",
+  "title": "Operations Runbook \u2014 Log Rotation and Cold Storage",
+  "service": "general",
+  "type": "filler",
+  "body": "Container application logs rotate daily and transfer to encrypted object storage buckets after 7 days on local disk.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

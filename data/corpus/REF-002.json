@@ -1,0 +1,10 @@
+{
+  "id": "REF-002",
+  "title": "Distributed cache invalidation architecture and update strategies",
+  "service": "platform",
+  "type": "reference",
+  "body": "When product page details change, stale copies are refreshed via event-driven catalog invalidation. For our catalog cache invalidation, stale copies are refreshed by event-driven purge on every write to the source record, ensuring sub-second global consistency.",
+  "entities": [],
+  "valid_from": "2025-08-01",
+  "superseded_by": null
+}

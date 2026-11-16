@@ -1,0 +1,10 @@
+{
+  "id": "F-005",
+  "title": "Release notes v2.5 \u2014 Read replica query offloading",
+  "service": "general",
+  "type": "filler",
+  "body": "Changelog release v2.5 routes heavy reporting queries away from the primary database cluster to dedicated read replicas.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

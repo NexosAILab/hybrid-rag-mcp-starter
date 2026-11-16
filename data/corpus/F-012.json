@@ -1,0 +1,10 @@
+{
+  "id": "F-012",
+  "title": "Service Catalog \u2014 Payments Gateway Service",
+  "service": "general",
+  "type": "filler",
+  "body": "The payments service integrates merchant processors and executes charge attempts with secure cardholder tokenization.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

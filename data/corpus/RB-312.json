@@ -1,0 +1,12 @@
+{
+  "id": "RB-312",
+  "title": "Fixing catalog SKU synchronization failures in inventory",
+  "service": "inventory",
+  "type": "runbook",
+  "body": "Inventory synchronization failures disrupt regional store visibility. SKU-8841-KZ sync failures require purging the CDN thumbnail cache. Re-verify item image URLs once CDN edge distribution completes successfully.",
+  "entities": [
+    "SKU-8841-KZ"
+  ],
+  "valid_from": "2025-08-10",
+  "superseded_by": null
+}

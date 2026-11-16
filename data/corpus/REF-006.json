@@ -1,0 +1,10 @@
+{
+  "id": "REF-006",
+  "title": "API traffic management, rate limiting and noisy neighbor isolation",
+  "service": "platform",
+  "type": "reference",
+  "body": "Protecting internal microservices from traffic spikes requires granular quotas. In our rate limiting architecture, a token bucket per client is enforced, ensuring noisy clients are throttled without affecting others.",
+  "entities": [],
+  "valid_from": "2025-08-01",
+  "superseded_by": null
+}

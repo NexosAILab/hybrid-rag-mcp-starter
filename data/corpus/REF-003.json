@@ -1,0 +1,10 @@
+{
+  "id": "REF-003",
+  "title": "Database disaster recovery, snapshot strategy and data restoration",
+  "service": "platform",
+  "type": "reference",
+  "body": "When a bad deploy corrupts data, our recovery procedures restore database integrity. Our backup and restore pipeline maintains nightly snapshots and point-in-time recovery used when a bad deploy corrupts data, restoring state within minutes.",
+  "entities": [],
+  "valid_from": "2025-08-01",
+  "superseded_by": null
+}

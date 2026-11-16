@@ -1,0 +1,10 @@
+{
+  "id": "F-002",
+  "title": "Release notes v2.2 \u2014 Gateway connection pooling",
+  "service": "general",
+  "type": "filler",
+  "body": "Changelog release v2.2 implements keep-alive connection reuse across microservices. Network roundtrip latency reduced across intra-cluster calls.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

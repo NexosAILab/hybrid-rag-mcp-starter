@@ -1,0 +1,10 @@
+{
+  "id": "F-008",
+  "title": "Engineering Glossary \u2014 Dead Letter Queue Architecture",
+  "service": "general",
+  "type": "filler",
+  "body": "A dead letter queue captures messages that fail processing after maximum retry attempts, isolating poison pills from production worker pipelines.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

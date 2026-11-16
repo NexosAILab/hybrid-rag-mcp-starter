@@ -1,0 +1,12 @@
+{
+  "id": "RB-207",
+  "title": "Database connection pool exhaustion handling (payments)",
+  "service": "payments",
+  "type": "runbook",
+  "body": "High traffic surges can saturate active payment transactions. For ERR_DB_CONN_417, recycle the read-replica pool and verify the PgBouncer limit. Monitor active client connections and clear orphan threads to restore throughput.",
+  "entities": [
+    "ERR_DB_CONN_417"
+  ],
+  "valid_from": "2025-07-01",
+  "superseded_by": null
+}

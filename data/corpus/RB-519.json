@@ -1,0 +1,12 @@
+{
+  "id": "RB-519",
+  "title": "Remediation steps for notification queue error states",
+  "service": "notifications",
+  "type": "runbook",
+  "body": "Queue consumer anomalies can trigger memory leaks. For ERR_QUEUE_707, scale the consumer group to zero and purge the topic. Re-enable downstream listeners once topic partitions stabilize.",
+  "entities": [
+    "ERR_QUEUE_707"
+  ],
+  "valid_from": "2025-10-05",
+  "superseded_by": null
+}

@@ -1,0 +1,10 @@
+{
+  "id": "REF-001",
+  "title": "Platform distributed task routing and multi-agent coordination",
+  "service": "platform",
+  "type": "reference",
+  "body": "To decide which agent handles each task, the system relies on deterministic orchestration. In our architecture, the coordinator routes each incoming task to specialized workers and runs them in parallel, then merges results cleanly before notifying the operator.",
+  "entities": [],
+  "valid_from": "2025-08-01",
+  "superseded_by": null
+}

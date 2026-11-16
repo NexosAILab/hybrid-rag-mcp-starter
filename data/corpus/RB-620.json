@@ -1,0 +1,12 @@
+{
+  "id": "RB-620",
+  "title": "Data-processing addendum \u2014 Customer data export handling",
+  "service": "compliance",
+  "type": "reference",
+  "body": "Data governance policies dictate strict timelines for exported customer files. Section 7.3 requires customer data exports to be deleted within 30 days of account closure. Audit records must register the automated purge confirmation.",
+  "entities": [
+    "Section 7.3"
+  ],
+  "valid_from": "2025-11-01",
+  "superseded_by": null
+}

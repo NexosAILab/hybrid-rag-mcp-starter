@@ -1,0 +1,10 @@
+{
+  "id": "F-006",
+  "title": "Release notes v2.6 \u2014 Metrics collection agent updates",
+  "service": "general",
+  "type": "filler",
+  "body": "Changelog release v2.6 upgrades system telemetry collectors to reduce memory footprint on edge computing instances.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

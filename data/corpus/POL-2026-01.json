@@ -1,0 +1,10 @@
+{
+  "id": "POL-2026-01",
+  "title": "Customer data retention and purge timelines policy (2026)",
+  "service": "compliance",
+  "type": "policy",
+  "body": "Updated data minimization guidelines enforce shortened storage cycles. Customer data is retained for 90 days after account closure. Automated verification triggers upon scheduled purge completion across cloud buckets.",
+  "entities": [],
+  "valid_from": "2026-01-10",
+  "superseded_by": null
+}

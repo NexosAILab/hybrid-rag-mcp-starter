@@ -1,0 +1,10 @@
+{
+  "id": "REF-004",
+  "title": "Engineering incident classification and severity level criteria",
+  "service": "operations",
+  "type": "reference",
+  "body": "Severity triage specifies what counts as a critical event across operations. Under our incident severity framework, SEV1 = full outage or data loss, SEV2 = major degradation, SEV3 = partial, SEV4 = minor operational impact.",
+  "entities": [],
+  "valid_from": "2025-08-01",
+  "superseded_by": null
+}

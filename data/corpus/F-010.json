@@ -1,0 +1,10 @@
+{
+  "id": "F-010",
+  "title": "Engineering Glossary \u2014 Blue Green Deployment Strategy",
+  "service": "general",
+  "type": "filler",
+  "body": "Blue green deployments maintain two identical production environments. Traffic is switched instantly via DNS or load balancer routing.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

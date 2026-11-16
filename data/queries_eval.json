@@ -1,0 +1,194 @@
+[
+  {
+    "id": "Q01",
+    "category": "exact_id",
+    "query": "What is the remediation for error ERR_CACHE_109 on the billing service?",
+    "expected_doc": "RB-114",
+    "expected_abstain": false,
+    "must_contain": "ERR_CACHE_109"
+  },
+  {
+    "id": "Q02",
+    "category": "exact_id",
+    "query": "How do I resolve ERR_DB_CONN_417 in the payments database?",
+    "expected_doc": "RB-207",
+    "expected_abstain": false,
+    "must_contain": "ERR_DB_CONN_417"
+  },
+  {
+    "id": "Q03",
+    "category": "exact_id",
+    "query": "What is the fix for SKU-8841-KX sync failures?",
+    "expected_doc": "RB-311",
+    "expected_abstain": false,
+    "must_contain": "SKU-8841-KX"
+  },
+  {
+    "id": "Q04",
+    "category": "exact_id",
+    "query": "What should I do when ERR_AUTH_TKN_203 appears in the session service?",
+    "expected_doc": "RB-402",
+    "expected_abstain": false,
+    "must_contain": "ERR_AUTH_TKN_203"
+  },
+  {
+    "id": "Q05",
+    "category": "exact_id",
+    "query": "Remediation steps for ERR_QUEUE_077 in notifications?",
+    "expected_doc": "RB-518",
+    "expected_abstain": false,
+    "must_contain": "ERR_QUEUE_077"
+  },
+  {
+    "id": "Q06",
+    "category": "exact_id",
+    "query": "What does Section 7.3 of the data-processing addendum require for customer data exports?",
+    "expected_doc": "RB-620",
+    "expected_abstain": false,
+    "must_contain": "30 days"
+  },
+  {
+    "id": "Q07",
+    "category": "temporal",
+    "query": "What is the refund window for annual plans?",
+    "expected_doc": "POL-2026-02",
+    "expected_abstain": false,
+    "must_contain": "14 days"
+  },
+  {
+    "id": "Q08",
+    "category": "temporal",
+    "query": "Under the current policy, how long do customers have to request a refund on an annual plan?",
+    "expected_doc": "POL-2026-02",
+    "expected_abstain": false,
+    "must_contain": "14 days"
+  },
+  {
+    "id": "Q09",
+    "category": "temporal",
+    "query": "What is the data retention period after account closure?",
+    "expected_doc": "POL-2026-01",
+    "expected_abstain": false,
+    "must_contain": "90 days"
+  },
+  {
+    "id": "Q10",
+    "category": "temporal",
+    "query": "How long do we keep customer data after an account is closed?",
+    "expected_doc": "POL-2026-01",
+    "expected_abstain": false,
+    "must_contain": "90 days"
+  },
+  {
+    "id": "Q11",
+    "category": "temporal",
+    "query": "What is the current session timeout for user accounts?",
+    "expected_doc": "POL-2026-03",
+    "expected_abstain": false,
+    "must_contain": "8 hours"
+  },
+  {
+    "id": "Q12",
+    "category": "temporal",
+    "query": "How long before an inactive session expires under the current policy?",
+    "expected_doc": "POL-2026-03",
+    "expected_abstain": false,
+    "must_contain": "8 hours"
+  },
+  {
+    "id": "Q13",
+    "category": "paraphrase",
+    "query": "How does the system decide which agent handles a task?",
+    "expected_doc": "REF-001",
+    "expected_abstain": false,
+    "must_contain": null
+  },
+  {
+    "id": "Q14",
+    "category": "paraphrase",
+    "query": "When a product page changes, how do stale copies get refreshed?",
+    "expected_doc": "REF-002",
+    "expected_abstain": false,
+    "must_contain": null
+  },
+  {
+    "id": "Q15",
+    "category": "paraphrase",
+    "query": "How do we recover the database after a bad deploy corrupts data?",
+    "expected_doc": "REF-003",
+    "expected_abstain": false,
+    "must_contain": null
+  },
+  {
+    "id": "Q16",
+    "category": "paraphrase",
+    "query": "What counts as a SEV1 incident?",
+    "expected_doc": "REF-004",
+    "expected_abstain": false,
+    "must_contain": null
+  },
+  {
+    "id": "Q17",
+    "category": "paraphrase",
+    "query": "What happens automatically when a new release fails its health checks?",
+    "expected_doc": "REF-005",
+    "expected_abstain": false,
+    "must_contain": null
+  },
+  {
+    "id": "Q18",
+    "category": "paraphrase",
+    "query": "How are noisy API clients throttled?",
+    "expected_doc": "REF-006",
+    "expected_abstain": false,
+    "must_contain": null
+  },
+  {
+    "id": "Q19",
+    "category": "unanswerable",
+    "query": "What is the SLA penalty clause for the EU region?",
+    "expected_doc": null,
+    "expected_abstain": true,
+    "must_contain": null
+  },
+  {
+    "id": "Q20",
+    "category": "unanswerable",
+    "query": "What is the procedure for exporting data under HIPAA?",
+    "expected_doc": null,
+    "expected_abstain": true,
+    "must_contain": null
+  },
+  {
+    "id": "Q21",
+    "category": "unanswerable",
+    "query": "How do I configure SAML SSO for enterprise accounts?",
+    "expected_doc": null,
+    "expected_abstain": true,
+    "must_contain": null
+  },
+  {
+    "id": "Q22",
+    "category": "unanswerable",
+    "query": "Which provider sends mobile push notifications?",
+    "expected_doc": null,
+    "expected_abstain": true,
+    "must_contain": null
+  },
+  {
+    "id": "Q23",
+    "category": "unanswerable",
+    "query": "How are refunds processed for crypto payments?",
+    "expected_doc": null,
+    "expected_abstain": true,
+    "must_contain": null
+  },
+  {
+    "id": "Q24",
+    "category": "unanswerable",
+    "query": "What is the PagerDuty escalation policy for SEV1 incidents?",
+    "expected_doc": null,
+    "expected_abstain": true,
+    "must_contain": null
+  }
+]

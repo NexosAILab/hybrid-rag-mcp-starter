@@ -1,0 +1,12 @@
+{
+  "id": "RB-621",
+  "title": "Customer data export and audit log retention requirements",
+  "service": "compliance",
+  "type": "reference",
+  "body": "Compliance auditing mandates continuous log preservation across all services. Section 7.8 requires audit logs to be retained for 24 months. Ensure storage tier lifecycle rules automate cold archive transitions.",
+  "entities": [
+    "Section 7.8"
+  ],
+  "valid_from": "2025-11-01",
+  "superseded_by": null
+}

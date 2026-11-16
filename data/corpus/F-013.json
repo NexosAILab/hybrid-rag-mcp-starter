@@ -1,0 +1,10 @@
+{
+  "id": "F-013",
+  "title": "Service Catalog \u2014 Inventory Tracking Engine",
+  "service": "general",
+  "type": "filler",
+  "body": "The inventory service provides real-time stock allocation and distributed warehouse reservation counters across regions.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

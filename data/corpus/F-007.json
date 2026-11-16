@@ -1,0 +1,10 @@
+{
+  "id": "F-007",
+  "title": "Engineering Glossary \u2014 Principle of Idempotency",
+  "service": "general",
+  "type": "filler",
+  "body": "Idempotency ensures that performing an operation multiple times yields the exact same state as a single invocation. Crucial for resilient message processing.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

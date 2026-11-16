@@ -1,0 +1,10 @@
+{
+  "id": "F-003",
+  "title": "Release notes v2.3 \u2014 Asynchronous webhook delivery",
+  "service": "general",
+  "type": "filler",
+  "body": "Changelog release v2.3 converts legacy synchronous outbound alerts to distributed background worker queues with exponential backoff.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

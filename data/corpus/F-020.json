@@ -1,0 +1,10 @@
+{
+  "id": "F-020",
+  "title": "Operations Runbook \u2014 Staging Environment Parity Standards",
+  "service": "general",
+  "type": "filler",
+  "body": "Staging environments mirror production cluster topology and utilize sanitized synthetic data sets for integration tests.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

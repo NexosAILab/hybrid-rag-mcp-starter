@@ -1,0 +1,10 @@
+{
+  "id": "POL-2025-03",
+  "title": "User authentication session timeout policy (2025)",
+  "service": "identity",
+  "type": "policy",
+  "body": "Baseline session duration limits for internal operator consoles. User sessions time out after 24 hours of inactivity. Sessions must be re-established through standard multi-factor challenge verification.",
+  "entities": [],
+  "valid_from": "2025-03-01",
+  "superseded_by": "POL-2026-03"
+}

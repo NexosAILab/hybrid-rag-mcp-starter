@@ -1,0 +1,10 @@
+{
+  "id": "F-009",
+  "title": "Engineering Glossary \u2014 Token Bucket Rate Limiting",
+  "service": "general",
+  "type": "filler",
+  "body": "The token bucket algorithm regulates network traffic by accumulating tokens at a fixed rate, allowing bursts while maintaining steady average throughput.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

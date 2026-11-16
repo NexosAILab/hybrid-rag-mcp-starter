@@ -1,0 +1,10 @@
+{
+  "id": "POL-2024-11",
+  "title": "Customer data retention and purge timelines policy (2024)",
+  "service": "compliance",
+  "type": "policy",
+  "body": "Historical data lifecycle standards governing terminated user repositories. Customer data is retained for 180 days after account closure. Secondary cold storage archives are wiped at the conclusion of this term.",
+  "entities": [],
+  "valid_from": "2024-11-01",
+  "superseded_by": "POL-2026-01"
+}

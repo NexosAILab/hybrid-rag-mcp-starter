@@ -1,0 +1,12 @@
+{
+  "id": "RB-208",
+  "title": "Resolving database connection errors in payments cluster",
+  "service": "payments",
+  "type": "runbook",
+  "body": "Cluster connectivity issues require rapid mitigation. For ERR_DB_CONN_471, fail over to the secondary database endpoint. Verify that replication lag remains below five seconds before confirming resolution.",
+  "entities": [
+    "ERR_DB_CONN_471"
+  ],
+  "valid_from": "2025-07-01",
+  "superseded_by": null
+}

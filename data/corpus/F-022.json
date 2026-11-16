@@ -1,0 +1,10 @@
+{
+  "id": "F-022",
+  "title": "Runbook ERR_GW_429 \u2014 Upstream Gateway Rate Limiting",
+  "service": "general",
+  "type": "filler",
+  "body": "For ERR_GW_429, engage exponential backoff jitter on outbound API clients and verify contractual quota tiers.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

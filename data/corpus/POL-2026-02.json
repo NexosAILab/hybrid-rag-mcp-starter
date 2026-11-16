@@ -1,0 +1,10 @@
+{
+  "id": "POL-2026-02",
+  "title": "Customer refund policy for annual enterprise plans (2026)",
+  "service": "billing",
+  "type": "policy",
+  "body": "Current terms update provisions for active annual subscriptions. The refund window for annual plans is 14 days from the invoice date. All processing occurs automatically via the primary payment gateway.",
+  "entities": [],
+  "valid_from": "2026-02-01",
+  "superseded_by": null
+}

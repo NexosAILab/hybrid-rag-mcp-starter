@@ -1,0 +1,12 @@
+{
+  "id": "RB-402",
+  "title": "Session service authentication token remediation (ERR_AUTH_TKN_203)",
+  "service": "identity",
+  "type": "runbook",
+  "body": "When ERR_AUTH_TKN_203 appears in the session service, engineers must respond immediately. For ERR_AUTH_TKN_203, revoke the refresh-token family and force re-authentication. Notify the user to regenerate active application credentials.",
+  "entities": [
+    "ERR_AUTH_TKN_203"
+  ],
+  "valid_from": "2025-09-01",
+  "superseded_by": null
+}

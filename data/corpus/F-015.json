@@ -1,0 +1,10 @@
+{
+  "id": "F-015",
+  "title": "Service Catalog \u2014 Notifications Message Broker",
+  "service": "general",
+  "type": "filler",
+  "body": "The notifications service dispatches multi-channel operational alerts via email, webhooks, and chat integrations.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

@@ -1,0 +1,12 @@
+{
+  "id": "RB-518",
+  "title": "Notification queue ingestion lag and consumer remediation",
+  "service": "notifications",
+  "type": "runbook",
+  "body": "Remediation steps for notifications dispatch backpressure require methodical queue recovery. For ERR_QUEUE_077, drain the dead-letter queue and replay messages in order. Ensure partition offsets are committed cleanly after consumer recovery.",
+  "entities": [
+    "ERR_QUEUE_077"
+  ],
+  "valid_from": "2025-10-05",
+  "superseded_by": null
+}

@@ -1,0 +1,12 @@
+{
+  "id": "RB-311",
+  "title": "Inventory catalog synchronization failure protocol",
+  "service": "inventory",
+  "type": "runbook",
+  "body": "Catalog update jobs may encounter synchronization discrepancies across distributed nodes. SKU-8841-KX sync failures require re-indexing the variant map. Ensure all warehouse worker threads have ingested the latest product hierarchy.",
+  "entities": [
+    "SKU-8841-KX"
+  ],
+  "valid_from": "2025-08-10",
+  "superseded_by": null
+}

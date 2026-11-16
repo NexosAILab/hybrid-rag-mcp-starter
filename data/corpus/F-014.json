@@ -1,0 +1,10 @@
+{
+  "id": "F-014",
+  "title": "Service Catalog \u2014 Identity and Directory Service",
+  "service": "general",
+  "type": "filler",
+  "body": "The identity service provides centralized OAuth token issuance, session tracking, and user privilege boundary enforcement.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

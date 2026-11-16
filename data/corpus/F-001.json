@@ -1,0 +1,10 @@
+{
+  "id": "F-001",
+  "title": "Release notes v2.1 \u2014 Schema optimizations",
+  "service": "general",
+  "type": "filler",
+  "body": "Changelog release v2.1 introduces partition pruning on historical ledger tables. Query performance improved by 40 percent on large analytical scans.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

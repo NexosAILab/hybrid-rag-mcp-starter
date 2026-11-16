@@ -1,0 +1,10 @@
+{
+  "id": "F-024",
+  "title": "Runbook SKU-2210-AA \u2014 Product Bundle Packaging Error",
+  "service": "general",
+  "type": "filler",
+  "body": "For SKU-2210-AA, reconcile bundle BOM configurations across warehouse ERP tables to restore shipping dispatch.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

@@ -1,0 +1,10 @@
+{
+  "id": "F-017",
+  "title": "Operations Runbook \u2014 Weekly Maintenance Window",
+  "service": "general",
+  "type": "filler",
+  "body": "Routine operating system patches and database index reorganizations occur every Sunday between 02:00 and 04:00 UTC.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

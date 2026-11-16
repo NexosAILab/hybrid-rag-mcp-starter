@@ -1,0 +1,10 @@
+{
+  "id": "REF-005",
+  "title": "Continuous deployment rollback protocols and traffic shifting",
+  "service": "platform",
+  "type": "reference",
+  "body": "When a new release fails health checks, automated deployment rollback triggers. During deployment rollback scenarios, blue-green releases switch back automatically when health checks fail, preventing customer disruption.",
+  "entities": [],
+  "valid_from": "2025-08-01",
+  "superseded_by": null
+}

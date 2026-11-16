@@ -1,0 +1,10 @@
+{
+  "id": "F-016",
+  "title": "Service Catalog \u2014 Search Indexing Service",
+  "service": "general",
+  "type": "filler",
+  "body": "The search service maintains inverted indexes and semantic vector representations for fast enterprise document discovery.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

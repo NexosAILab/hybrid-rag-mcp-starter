@@ -1,0 +1,10 @@
+{
+  "id": "F-021",
+  "title": "Runbook ERR_MAIL_550 \u2014 Inbound Mailbox Rejection",
+  "service": "general",
+  "type": "filler",
+  "body": "For ERR_MAIL_550, verify DNS MX records and reverse PTR lookup validity before clearing outbound message backlogs.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

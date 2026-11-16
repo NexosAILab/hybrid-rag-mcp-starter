@@ -1,0 +1,10 @@
+{
+  "id": "POL-2024-07",
+  "title": "Customer refund policy for annual enterprise subscriptions (2024)",
+  "service": "billing",
+  "type": "policy",
+  "body": "Legacy annual subscription contracts follow established refund terms. The refund window for annual plans is 30 days from the invoice date. Requests submitted after this window are subject to management review.",
+  "entities": [],
+  "valid_from": "2024-06-01",
+  "superseded_by": "POL-2026-02"
+}

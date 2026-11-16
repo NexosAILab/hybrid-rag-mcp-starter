@@ -1,0 +1,12 @@
+{
+  "id": "RB-403",
+  "title": "Managing session service authentication token errors",
+  "service": "identity",
+  "type": "runbook",
+  "body": "Authentication token errors can disrupt ongoing user interactions. For ERR_AUTH_TKN_230, extend the token grace window to 15 minutes. Check authorization gateway error rates to confirm client recovery.",
+  "entities": [
+    "ERR_AUTH_TKN_230"
+  ],
+  "valid_from": "2025-09-01",
+  "superseded_by": null
+}

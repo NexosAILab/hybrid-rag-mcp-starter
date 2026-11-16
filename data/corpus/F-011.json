@@ -1,0 +1,10 @@
+{
+  "id": "F-011",
+  "title": "Service Catalog \u2014 Account Reconciliation Architecture",
+  "service": "general",
+  "type": "filler",
+  "body": "The ledger accounting system manages invoice calculations, recurring subscription schedules, and balance reconciliation records.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}

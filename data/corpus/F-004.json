@@ -1,0 +1,10 @@
+{
+  "id": "F-004",
+  "title": "Release notes v2.4 \u2014 Distributed tracing propagation",
+  "service": "general",
+  "type": "filler",
+  "body": "Changelog release v2.4 standardizes OpenTelemetry trace headers across all ingress proxies and message brokers for full observability.",
+  "entities": [],
+  "valid_from": "2025-05-01",
+  "superseded_by": null
+}
