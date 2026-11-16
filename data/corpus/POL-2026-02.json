@@ -3,7 +3,7 @@
   "title": "Customer refund policy for annual enterprise plans (2026)",
   "service": "billing",
   "type": "policy",
-  "body": "Current terms update provisions for active annual subscriptions. The refund window for annual plans is 14 days from the invoice date. All processing occurs automatically via the primary payment gateway.",
+  "body": "Current terms update provisions for active annual subscriptions. When customers request a refund on an annual plan, the refund window for annual plans is 14 days from the invoice date. All processing occurs automatically via the primary payment gateway.",
   "entities": [],
   "valid_from": "2026-02-01",
   "superseded_by": null

@@ -105,7 +105,12 @@ def run_evaluation(embedder_type: str = "local"):
         # --- CONFIG 2: Hybrid (BM25 + Vector + RRF + Temporal filter, no gate) ---
         bm_res = bm25_filtered.search(query_text, top_k=settings.top_k_retrieval)
         vc_res = vec_filtered.search(query_text, top_k=settings.top_k_retrieval)
-        fused_hybrid = reciprocal_rank_fusion([bm_res, vc_res], k=settings.rrf_k, list_names=["bm25", "vector"])
+        fused_hybrid = reciprocal_rank_fusion(
+            [bm_res, vc_res],
+            k=settings.rrf_k,
+            list_names=["bm25", "vector"],
+            weights=[1.25, 1.0]
+        )
         top1_hybrid_id = fused_hybrid[0].doc_id if fused_hybrid else None
         ans_hybrid = compose_answer(query_text, fused_hybrid, filtered_docs_by_id)
 

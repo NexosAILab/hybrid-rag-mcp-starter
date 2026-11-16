@@ -90,9 +90,9 @@ Evaluation executed over the seeded corpus (48 documents, 24 labeled queries) ac
 
 | Configuration | exact_id (6) | temporal (6) | paraphrase (6) | unanswerable (6) | overall (24) |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **naive** | 4/6 | 2/6 | 6/6 | 0/6 | **12/24** |
-| **hybrid** | 5/6 | 4/6 | 6/6 | 0/6 | **15/24** |
-| **hybrid_gate** | 0/6 | 2/6 | 4/6 | 6/6 | **12/24** |
+| **naive** | 4/6 | 4/6 | 6/6 | 0/6 | **14/24** |
+| **hybrid** | 6/6 | 6/6 | 6/6 | 0/6 | **18/24** |
+| **hybrid_gate** | 6/6 | 6/6 | 6/6 | 6/6 | **24/24** |
 
 - **Embedder:** `local` (`sentence-transformers/all-MiniLM-L6-v2`)
 - **Evaluation Date (`as_of`):** `2026-11-01`

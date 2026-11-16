@@ -66,7 +66,8 @@ def search_knowledge(query: str, top_k: int = 5) -> Dict[str, Any]:
     fused = reciprocal_rank_fusion(
         [bm25_results, vec_results],
         k=settings.rrf_k,
-        list_names=["bm25", "vector"]
+        list_names=["bm25", "vector"],
+        weights=[1.25, 1.0]
     )
     
     output_results = []
@@ -92,7 +93,8 @@ def answer_with_citations(question: str) -> Dict[str, Any]:
     fused = reciprocal_rank_fusion(
         [bm25_results, vec_results],
         k=settings.rrf_k,
-        list_names=["bm25", "vector"]
+        list_names=["bm25", "vector"],
+        weights=[1.25, 1.0]
     )
     
     ans = compose_answer(question, fused, docs_by_id)

@@ -11,6 +11,11 @@ from .corpus import Doc
 from .fusion import FusedResult
 from .gate import Claim, extract_identifiers, NUMERIC_VALUE_REGEX
 
+KEY_NUMERIC_OR_OBLIGATION_REGEX = re.compile(
+    r"\b(?:\d+\s*(?:days|hours|months|minutes)|requires|time\s+out|times\s+out|must|shall|policy)\b",
+    re.IGNORECASE
+)
+
 @dataclass
 class Answer:
     text: str
@@ -48,13 +53,14 @@ def compose_answer(
         id_matches = len(q_ids.intersection(s_ids))
         content_matches = len(set(query_tokens).intersection(s_tokens))
         
-        score = 3 * id_matches + content_matches
+        bonus = 2 if KEY_NUMERIC_OR_OBLIGATION_REGEX.search(s) else 0
+        
+        score = 3 * id_matches + content_matches + bonus
         scored_sentences.append((score, idx, s))
 
     # Pick top 2 sentences (ties -> earliest in doc)
     scored_sentences.sort(key=lambda item: (-item[0], item[1]))
     
-    # Check if any sentence has content token matches
     best_score = scored_sentences[0][0]
     if best_score <= 0:
         return Answer(text="", claims=[])

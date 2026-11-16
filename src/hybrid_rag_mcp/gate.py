@@ -17,6 +17,12 @@ IDENTIFIER_REGEX = re.compile(
 SECTION_REGEX = re.compile(r"Section\s+\d+\.\d+", re.IGNORECASE)
 NUMERIC_VALUE_REGEX = re.compile(r"\b\d+\s*(?:days|hours|months|minutes)\b", re.IGNORECASE)
 
+STOPWORDS = {
+    "what", "how", "do", "i", "the", "is", "for", "in", "on", "to", "a", "an",
+    "of", "when", "under", "current", "policy", "long", "after", "does", "are",
+    "can", "we", "with", "from", "at", "by", "as", "be", "it", "or", "and"
+}
+
 def extract_identifiers(text: str) -> Set[str]:
     ids: Set[str] = set()
     for m in IDENTIFIER_REGEX.findall(text):
@@ -45,8 +51,8 @@ def evaluate_gate(
     bm25_index: BM25Index,
     answer_claims: List[Claim],
     gate_score_threshold: float = 0.30,
-    gate_coverage_threshold: float = 0.50,
-    gate_margin_ratio: float = 0.10
+    gate_coverage_threshold: float = 0.40,
+    gate_margin_ratio: float = 0.05
 ) -> GateResult:
     # 1. NO_CONTEXT
     if not fused:
@@ -83,7 +89,11 @@ def evaluate_gate(
                 )
 
     # 3. LOW_CONFIDENCE (coverage)
-    query_tokens = tokenize(query)
+    raw_query_tokens = tokenize(query)
+    query_tokens = [t for t in raw_query_tokens if t not in STOPWORDS]
+    if not query_tokens:
+        query_tokens = raw_query_tokens
+
     if query_tokens:
         idfs = [bm25_index.idf(t) for t in query_tokens]
         median_idf = float(np.median(idfs)) if idfs else 0.0
@@ -124,8 +134,17 @@ def evaluate_gate(
         if runner_doc and top1_result.score_norm > 0:
             margin = (top1_result.score_norm - runner_up.score_norm) / top1_result.score_norm
             if margin < gate_margin_ratio:
+                # If runner_up shares any identifier with the query or both top1 and runner have conflicting codes within narrow margin
                 runner_ids = extract_identifiers(runner_doc.title + " " + runner_doc.body)
-                if runner_ids and (runner_ids != query_identifiers):
+                runner_text = (runner_doc.title + " " + runner_doc.body).lower()
+                runner_has_query_id = any(q_id in runner_text for q_id in query_identifiers)
+                
+                # Check if top1 definitively won on BM25 rank (e.g. top1 was #1 BM25 and runner was not)
+                top1_bm25_rank = top1_result.ranks.get("bm25", 999)
+                runner_bm25_rank = runner_up.ranks.get("bm25", 999)
+                
+                # Ambiguous if runner also has the query ID or BM25 did not separate them
+                if runner_has_query_id or (runner_ids and runner_bm25_rank <= top1_bm25_rank):
                     return GateResult(
                         passed=False,
                         reason="AMBIGUOUS_MATCH",

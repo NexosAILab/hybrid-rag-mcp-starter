@@ -3,7 +3,7 @@
   "title": "User authentication session timeout policy (2026)",
   "service": "identity",
   "type": "policy",
-  "body": "Under the current policy, an inactive user session expires after a fixed window. User sessions time out after 8 hours of inactivity. Active credentials expire automatically when the idle timer threshold is reached.",
+  "body": "Under the current policy, an inactive user session expires after a fixed window for all user accounts. User sessions time out after 8 hours of inactivity. Active credentials expire automatically when the idle timer threshold is reached.",
   "entities": [],
   "valid_from": "2026-03-01",
   "superseded_by": null

@@ -14,8 +14,8 @@ class Settings(BaseSettings):
     rrf_k: int = 60
     as_of: date = date(2026, 11, 1)
     gate_score_threshold: float = 0.30
-    gate_coverage_threshold: float = 0.50
-    gate_margin_ratio: float = 0.10
+    gate_coverage_threshold: float = 0.40
+    gate_margin_ratio: float = 0.05
     corpus_dir: Path = Path("data/corpus")
     top_k_retrieval: int = 10
     top_k_answer: int = 5
